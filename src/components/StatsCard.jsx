@@ -3,13 +3,21 @@ function StatsCard({ title, value }) {
     <div
       style={{
         background: "#1e2235",
-        padding: "20px",
+        padding: "25px",
         borderRadius: "12px",
-        minWidth: "200px",
+        minWidth: "220px",
       }}
     >
-      <h3>{value}</h3>
-      <p>{title}</p>
+      <h2>{value}</h2>
+
+      <p
+        style={{
+          color: "#94a3b8",
+          marginTop: "10px",
+        }}
+      >
+        {title}
+      </p>
     </div>
   );
 }

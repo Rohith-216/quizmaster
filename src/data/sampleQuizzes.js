@@ -3,13 +3,41 @@ const sampleQuizzes = [
     id: 1,
     title: "JavaScript Fundamentals",
     category: "Programming",
-    questions: [1, 2, 3, 4, 5],
+    questions: [
+      {
+        question: "Which keyword declares a block scoped variable?",
+        options: ["var", "let", "function", "static"],
+        answer: "let",
+      },
+      {
+        question: "Which company created JavaScript?",
+        options: ["Google", "Microsoft", "Netscape", "Oracle"],
+        answer: "Netscape",
+      },
+      {
+        question: "Which symbol is used for comments in JavaScript?",
+        options: ["//", "#", "<!--", "**"],
+        answer: "//",
+      },
+    ],
   },
+
   {
     id: 2,
     title: "World Geography",
     category: "General Knowledge",
-    questions: [1, 2, 3, 4],
+    questions: [
+      {
+        question: "Capital of Japan?",
+        options: ["Tokyo", "Delhi", "Paris", "Beijing"],
+        answer: "Tokyo",
+      },
+      {
+        question: "Largest continent?",
+        options: ["Africa", "Europe", "Asia", "Australia"],
+        answer: "Asia",
+      },
+    ],
   },
 ];
 

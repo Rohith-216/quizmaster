@@ -1,4 +1,12 @@
+import { useNavigate } from "react-router-dom";
+
 function QuizCard({ quiz }) {
+  const navigate = useNavigate();
+
+  const startQuiz = () => {
+    navigate(`/quiz/${quiz.id}`);
+  };
+
   return (
     <div
       style={{
@@ -12,11 +20,9 @@ function QuizCard({ quiz }) {
 
       <p>{quiz.category}</p>
 
-      <p>
-        {quiz.questions.length} Questions
-      </p>
+      <p>{quiz.questions.length} Questions</p>
 
-      <button>
+      <button onClick={startQuiz}>
         Start Quiz
       </button>
     </div>
